@@ -1,0 +1,18 @@
+
+ 
+      <div *ngIf="!userName">
+        <h1 @fade>Write your name and press enter</h1>
+        <input (change)="getName($event)" />
+      </div>
+      <div *ngIf="userName">
+        <h1>Hello,{{ userName }}</h1>
+        <a routerLink="/game" >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Start the game
+        </a>
+        
+      </div>
+

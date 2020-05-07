@@ -1,0 +1,10 @@
+<a *ngIf="!gameStarted" (click)="start()"><span></span>
+    <span></span>
+    <span></span>
+    <span></span>Start the timer</a>
+
+<div *ngIf="gameStarted">
+  <h1>Time left:{{ seconds }}</h1>
+  <button (click)="countClick()">Click</button>
+  <h1>{{ clickCounter }}</h1>
+</div>

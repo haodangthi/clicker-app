@@ -1,0 +1,6 @@
+<ul [@listAnimation]='plays.length'>
+  <li *ngFor="let play of plays">
+    <h2>{{ play.round }} play</h2>
+    <h3>Total number of clicks:{{ play.clicks }}</h3>
+  </li>
+</ul>
